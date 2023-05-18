@@ -8,3 +8,7 @@ resource "aws_instance" "example" {
     Name = "terraform-instance"
   }
 }
+resource "aws_s3_bucket" "exercise_bucket" {
+  bucket = "my-example-bucket"
+  acl    = "public"
+}
